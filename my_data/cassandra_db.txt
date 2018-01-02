@@ -1,0 +1,15 @@
+cqlsh> create sveticovdb with replication={'class':'SimpleStrategy','replication_factor':1};
+SyntaxException: line 1:7 no viable alternative at input 'sveticovdb' ([create] sveticovdb...)
+cqlsh> create keyspace sveticovdb with replication={'class':'SimpleStrategy','replication_factor':1};
+cqlsh> use sveticovdb;
+cqlsh:sveticovdb> create table customer(
+              ... id int primary key,
+              ... firstname text,
+              ... lastname text,
+              ... age int
+              ... );
+cqlsh:sveticovdb> select * from customer
+              ... ;
+
+ id | age | firstname | lastname
+----+-----+-----------+----------
