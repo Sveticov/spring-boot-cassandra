@@ -1,3 +1,5 @@
+start cassandra
+
 C:\Users\Sveticov>cd c:\
 
 c:\>cd program files\datastax community
