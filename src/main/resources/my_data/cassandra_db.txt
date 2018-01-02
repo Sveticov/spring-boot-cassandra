@@ -1,3 +1,14 @@
+C:\Users\Sveticov>cd c:\
+
+c:\>cd program files\datastax community
+
+c:\Program Files\DataStax Community>cd apache-cassandra
+
+c:\Program Files\DataStax Community\apache-cassandra>cd bin
+
+c:\Program Files\DataStax Community\apache-cassandra\bin>cqlsh
+
+
 cqlsh> create sveticovdb with replication={'class':'SimpleStrategy','replication_factor':1};
 SyntaxException: line 1:7 no viable alternative at input 'sveticovdb' ([create] sveticovdb...)
 cqlsh> create keyspace sveticovdb with replication={'class':'SimpleStrategy','replication_factor':1};
